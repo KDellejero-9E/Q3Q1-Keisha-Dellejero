@@ -1,0 +1,100 @@
+body {
+  background: linear-gradient(to bottom, #090979, #020024);
+  color: #333;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: whitesmoke;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #555;
+}
+
+footer p {
+  font-style: italic;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.operator-section {
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+.operator-section h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.operator-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-warning {
+  background-color: #00d4ff;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #090979;
+  transform: scale(1.05);
+}
+
+.btn-dark {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #090979;
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background-color: #3131d2;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #090979;
+  transform: scale(1.05);
+}
+
+.d-none {
+  display: none;
+}

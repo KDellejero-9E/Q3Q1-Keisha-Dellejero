@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript Concepts</title>
+	<!-- JS Setup -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" ref="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4">If a = 20 and b = 5, compute for the following</h1>
+
+    <!-- Arithmetic Operator Section -->
+    <div class="operator-section">
+      <h2>Arithmetic Operator</h2>
+      <p id="arithmetic-result" class="d-none">
+        a. Exponent: 3200000<br>
+        b. Mod: 0
+      </p>
+      <button class="btn btn-warning" onclick="showAnswer('arithmetic-result')">Show Answer</button>
+    </div>
+
+    <!-- Comparison Operator Section -->
+    <div class="operator-section">
+      <h2>Comparison Operator</h2>
+      <p id="comparison-result" class="d-none">
+        a. Is a greater than b?: true<br>
+        b. Is a equal to b?: false
+      </p>
+      <button class="btn btn-dark" onclick="showAnswer('comparison-result')">Show Answer</button>
+    </div>
+
+    <!-- Logical Operator Section -->
+    <div class="operator-section">
+      <h2>Logical Operator</h2>
+      <p id="logical-result" class="d-none">
+        a. (a &lt;= b) &amp;&amp; (a &gt;= b): false<br>
+        b. (a != b) || (a == b): true
+      </p>
+      <button class="btn btn-success" onclick="showAnswer('logical-result')">Show Answer</button>
+    </div>
+</div>
+
+  	<footer class="mt-4">
+    	<p>&copy; 2025 Keisha Dellejero | All Rights Reserved</p>
+  	</footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    // JavaScript Data Types and Variables
+    var a = 20;
+    var b = 5;
+
+    // Function to toggle visibility of answers
+    function showAnswer(id) {
+      const element = document.getElementById(id);
+      element.classList.toggle('d-none');
+    }
+
+    // Outputs (JavaScript Operators)
+    var exponent = Math.pow(a, b);  // Exponentiation: a^b
+    var mod = a % b;  // Modulo: a % b
+    var isGreaterThan = a > b;  // Comparison: is a greater than b?
+    var isEqual = a == b;  // Comparison: is a equal to b?
+    var andOperator = (a <= b) && (a >= b);  // Logical AND
+    var orOperator = (a != b) || (a == b);  // Logical OR
+
+    // Display answers
+    document.getElementById("arithmetic-result").innerHTML = 
+      "a. Exponent: " + exponent + "<br>" + "b. Mod: " + mod;
+
+    document.getElementById("comparison-result").innerHTML = 
+      "a. Is a greater than b?: " + isGreaterThan + "<br>" +
+      "b. Is a equal to b?: " + isEqual;
+
+    document.getElementById("logical-result").innerHTML = 
+      "a. (a <= b) && (a >= b): " + andOperator + "<br>" +
+      "b. (a != b) || (a == b): " + orOperator;
+  </script>
+</body>
+</html>
